@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beranda - Produk Diskon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1e3c72;
+            color: #fff;
+            padding: 32px 0 16px 0;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            box-shadow: 0 4px 16px #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px #1e3c72;
+        }
+
+        marquee {
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a:focus,
+        nav a:active {
+            color: var(--accent);
+        }
+
+        a {
+            color: #1976d2;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:visited {
+            color: #7b1fa2;
+        }
+
+        a:active {
+            color: #d84315;
+        }
+
+        a:hover {
+            color: #d84315;
+        }
+
+        form {
+            margin: 18px 0 0 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            padding: 7px 12px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background: #1e3c72;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        h2 {
+            color: #1e3c72;
+            text-align: center;
+            margin-top: 32px;
+            font-size: 1.5em;
+        }
+
+        table {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(60, 60, 60, 0.10);
+            margin: 32px auto 24px auto;
+            width: 90%;
+            max-width: 900px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            text-align: center;
+            font-size: 1em;
+            padding: 14px 8px;
+        }
+
+        th {
+            background: linear-gradient(90deg, #1e3c72 70%, #43a047 100%);
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f7fa;
+        }
+
+        tr:hover {
+            background: #e3f2fd !important;
+            transition: background 0.2s;
+        }
+
+        td img {
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+            transition: transform 0.2s;
+        }
+
+        td img:hover {
+            transform: scale(1.07);
+        }
+
+        footer {
+            margin-top: 32px;
+            background: #e3f2fd;
+            padding: 22px 0 12px 0;
+            border-top: 2px solid #1e3c72;
+            box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.07);
+        }
+
+        footer img {
+            transition: transform 0.2s ease;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #bbb;
+        }
+
+        footer img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 700px) {
+
+            table,
+            th,
+            td {
+                font-size: 0.9em;
+                padding: 8px 4px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 align="center">SUMBER REJEKI FOOTBALL BOOTS CENTRE</h1>
+        <hr>
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            Selamat datang di Toko Sepatu Bola termurah sejagat raya! Temukan koleksi sepatu bola terbaik kami.
+        </marquee>
+    </header>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f0f0 60%, #e0e7ff 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            color: #1e3c72;
+            letter-spacing: 2px;
+            margin-top: 24px;
+            text-shadow: 1px 1px 4px #1e3c72;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px 0;
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        table {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px #bbb;
+            margin-bottom: 24px;
+        }
+
+        th,
+        td {
+            text-align: center;
+            font-size: 1em;
+        }
+
+        th {
+            background: #1e3c72;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f7fa;
+        }
+
+        tr:hover {
+            background: #e3f2fd;
+            transition: background 0.2s;
+        }
+
+        form {
+            margin: 12px 0 0 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input[type="text"] {
+            padding: 6px 10px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background: #1e3c72;
+            color: #fff;
+            border: none;
+            padding: 7px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            margin-top: 32px;
+            background: #e3f2fd;
+            padding: 22px 0 12px 0;
+            border-top: 2px solid #1e3c72;
+            box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.07);
+        }
+
+        footer img {
+            margin-bottom: 8px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+
+            table,
+            tr,
+            td,
+            th {
+                font-size: 0.97em;
+            }
+
+            img {
+                width: 120px;
+            }
+
+            td {
+                min-width: 120px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            table,
+            tr,
+            td,
+            th {
+                font-size: 0.85em;
+            }
+
+            img {
+                width: 80px;
+            }
+
+            ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            table {
+                margin: 0 2px;
+            }
+
+            td {
+                min-width: 80px;
+            }
+        }
+
+        @keyframes highlight {
+            0% {
+                background: #fffde7;
+            }
+
+            100% {
+                background: #f8fafc;
+            }
+        }
+    </style>
+    <nav align="center">
+        <a href="diskon.html">Diskon</a> |
+        <a href="produk.html">Best Seller</a> |
+        <a href="transaksi.html">Form Transaksi</a> |
+        <a href="tentang.html">Tentang Kami</a>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const rows = document.querySelectorAll('table tr');
+            rows.forEach((row, idx) => {
+                if (idx === 0) return; 
+                row.addEventListener('mouseenter', () => {
+                    row.style.backgroundColor = '#ffe082';
+                });
+                row.addEventListener('mouseleave', () => {
+                    row.style.backgroundColor = (idx % 2 === 0) ? '#fff' : '#fff';
+                });
+            });
+
+            let colors = ['white'];
+            let i = 0;
+            setInterval(() => {
+                document.querySelector('header h1').style.color = colors[i % colors.length]
+                i++;
+            }, 1800);
+        });
+    </script>
+    <hr>
+    <form align="right" id="searchForm" action="produk.html" method="get">
+        <label for="search">Cari Produk:</label>
+        <input type="text" id="search" name="q" placeholder="(adidas,nike,puma,mizuno)" required>
+        <input type="submit" value="Cari">
+    </form>
+    <hr>
+    
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
+            var val = document.getElementById('search').value.trim().toLowerCase();
+            if (val === 'nike') {
+                window.location.href = 'nike.html';
+                e.preventDefault();
+            } else if (val === 'adidas') {
+                window.location.href = 'adidas.html';
+                e.preventDefault();
+            } else if (val === 'puma') {
+                window.location.href = 'puma.html';
+                e.preventDefault();
+            } else if (val === 'mizuno') {
+                window.location.href = 'mizuno.html';
+                e.preventDefault();
+            }
+        });
+    </script>
+    <table border="1" cellpadding="10" align="center">
+        <tr>
+            <th>Nama Produk</th>
+            <th>Gambar Produk</th>
+            <th>Nama Promo</th>
+        </tr>
+        <tr>
+            <td align="center">Nike Mercurial Vapor 16 Elite</td>
+            <td>
+                <a href="https://www.nike.com/id/t/mercurial-vapor-16-elite-low-top-football-boot-KBLZh1/FQ1457-301">
+                    <img src="nike mercurial vapor 16 elite.jpg" alt="Nike Vapor 16" width="200"></a>
+            </td>
+            <td>Potongan s/d Rp.500rb</td>
+        </tr>
+        <tr>
+            <td align="center">Adidas Predator Fold-Over Tongue Black</td>
+            <td>
+                <a href=https://www.adidas.co.id/predator-elite-fold-over-tongue-firm-ground-boots-994181.html>
+                    <img src="predator fold-over black.jpg" alt="Adidas Predator" width="200" alt="Promo 1">
+            </td></a>
+            </td>
+            <td>Potongan s/d Rp.299rb</td>
+        </tr>
+        <tr>
+            <td align="center">Nike Mercurial Superfly 10 Elite</td>
+            <td>
+                <a
+                    href="https://www.nike.com/id/t/mercurial-superfly-10-elite-high-top-football-boot-Snwv27/FQ1454-800">
+                    <img src="Nike Mercurial Superfly 10 Elite.jpg" alt="Nike Superfly 10" width="200" alt="Promo 1">
+            </td></a>
+            </td>
+            <td>Potongan s/d Rp.500rb</td>
+        </tr>
+    </table>
+
+    <p align="center"><a href="diskon.html">Klik di sini untuk lihat produk diskon lainnya!</a></p>
+    <hr>
+    <footer>
+        <div align="center">
+            <img src="tabob.jpg" alt="Logo Perusahaan" width="200"><br>
+        </div>
+        <p align="center">&copy; 2025 Sumber Rejeki Football Boots Centre</p>
+    </footer>
+</body>
+
+</html>

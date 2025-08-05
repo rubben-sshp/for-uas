@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Diskon Sepatu Bola</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f0f0f0 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1e3c72;
+            color: #fff;
+            padding: 32px 0 16px 0;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            box-shadow: 0 4px 16px #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px #1e3c72;
+        }
+
+        marquee {
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        table {
+            background: #ffffffcc;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px #bdbdbd55;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 20px;
+        }
+
+        td,
+        th {
+            border-radius: 10px;
+            padding: 16px;
+            vertical-align: top;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 14px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #3949ab;
+            font-weight: 500;
+            transition: color 0.2s, background 0.2s;
+            padding: 6px 14px;
+            border-radius: 6px;
+            display: block;
+        }
+
+        ul li a:hover {
+            color: #fff;
+            background: #3949ab;
+        }
+
+        h2 {
+            color: #3949ab;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: #1a237e;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .produk-list {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 16px;
+        }
+
+        .produk-item {
+            background: #f5f5f5;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #bdbdbd33;
+            padding: 14px 10px;
+            width: 210px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .produk-item:hover {
+            box-shadow: 0 6px 18px #3949ab33;
+        }
+
+        .produk-item img {
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #bdbdbd55;
+            transition: transform 0.2s;
+            margin-bottom: 8px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #bdbdbd55;
+            transition: transform 0.2s;
+            margin-bottom: 8px;
+        }
+
+        img:hover {
+            transform: scale(1.07);
+        }
+
+        footer {
+            margin-top: 32px;
+            background: #e3f2fd;
+            padding: 22px 0 12px 0;
+            border-top: 2px solid #3949ab;
+            box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.07);
+        }
+
+        a {
+            transition: color 0.2s, background 0.2s;
+        }
+
+        a:visited {
+            color: #6a1b9a;
+        }
+
+        a:hover {
+            color: #d84315;
+        }
+
+        @media (max-width: 900px) {
+            .produk-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .produk-item {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            table {
+                width: 98%;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var promo = document.querySelector('td[colspan="2"]');
+            if (promo) {
+                promo.classList.add('highlight');
+                setTimeout(function () {
+                    promo.classList.remove('highlight');
+                }, 3000);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var beliLinks = document.querySelectorAll('a[href="transaksi.html"]');
+            beliLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    link.style.background = '#ffe082';
+                    setTimeout(function () {
+                        link.style.background = '';
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 align="center">SUMBER REJEKI FOOTBALL BOOTS CENTRE</h1>
+        <hr>
+        <marquee behavior="scroll" direction="left">🔥 DISKON BESAR-BESARAN! Dapatkan potongan harga hingga 500rb hanya minggu ini! 🔥</marquee>
+    </header>
+
+    <table align="center" border="1" cellpadding="10" width="100%">
+        <tr>
+            <td colspan="2" align="center">
+                <h2>Promo Terbaru</h2>
+                <p>Diskon s/d Rp.1000.000 untuk produk dibawah ini!</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%">
+                <h2 align="center">Menu</h2>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Best Seller</a></li>
+                    <li><a href="transaksi.html">Form Transaksi</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </td>
+            <td valign="top">
+                <h2 align="center">Daftar Produk Sepatu Bola</h2>
+                <div class="produk-list">
+                    <div class="produk-item">
+                        <h3>Nike Mercurial Vapor 16 Elite</h3>
+                        <a href="https://www.nike.com/id/t/mercurial-vapor-16-elite-low-top-football-boot-dpLhFx/FQ8693-301">
+                            <img src="nike mercurial vapor 16 elite.jpg" alt="nike V 16" width="100%">
+                        </a>
+                        <p>Spesial untuk kontrol, dribling dan shooting.<br>
+                            <a class="cta-link" href="transaksi.html">Beli</a>
+                        </p>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Adidas Predator Fold-Over Tongue Black</h3>
+                        <a href="https://www.adidas.co.id/predator-elite-fold-over-tongue-firm-ground-boots-994181.html">
+                            <img src="predator fold-over black.jpg" alt="Adidas Predator" width="100%">
+                        </a>
+                        <p>Sentuhan lembut dan kontrol maksimal.<br>
+                            <a class="cta-link" href="transaksi.html">Beli</a>
+                        </p>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Nike Mercurial Superfly 10 Elite</h3>
+                        <a href="https://www.nike.com/id/t/mercurial-superfly-10-elite-high-top-football-boot-Snwv27/FQ1454-800">
+                            <img src="Nike Mercurial Superfly 10 Elite.jpg" alt="nike S 10" width="100%">
+                        </a>
+                        <p>Spesial untuk kontrol, dribling dan shooting.<br>
+                            <a class="cta-link" href="transaksi.html">Beli</a>
+                        </p>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Puma Ultra 5 Ultimate FG/AG Green</h3>
+                        <a href="https://id.puma.com/en/pd/ultra-5-ultimate-fg-football-boots-unisex/4067979272551.html">
+                            <img src="Puma Ultra 5 Ultimate Green.jpg" alt="puma Ultra" width="100%">
+                        </a>
+                        <p>Spesial untuk kontrol, dribling dan shooting.<br>
+                            <a class="cta-link" href="transaksi.html">Beli</a>
+                        </p>
+                    </div>
+                    <div class="produk-item">
+                        <h3>Adidas Copa Pure II Lasceless</h3>
+                        <a href="https://www.adidas.co.id/copa-pure-3-elite-laceless-firm-ground-boots-1032009.html">
+                            <img src="Adidas Copa Pure II.jpg" alt="Adidas Copa" width="100%">
+                        </a>
+                        <p>Sentuhan lembut dan kontrol maksimal.<br>
+                            <a class="cta-link" href="transaksi.html">Beli</a>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <p align="center"><a href="produk.html">Klik di sini untuk melihat produk lainnya!</a></p>
+    <p align="center">Jika ada pertanyaan, silakan hubungi kami melalui <a
+            href="https://mail.google.com/mail/?view=cm&to=rubben.10524055@mahasiswa.unikom.ac.id" target="_blank">Email</a>.</p>
+    <hr>
+
+    <footer>
+        <div align="center">
+            <img src="tabob.jpg" alt="Logo Perusahaan" width="200"><br>
+        </div>
+        <p align="center">&copy; 2025 Sumber Rejeki Football Boots Centre</p>
+    </footer>
+</body>
+</html>
